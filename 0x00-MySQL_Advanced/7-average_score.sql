@@ -3,7 +3,7 @@
 DROP PROCEDURE IF EXISTS ComputeAverageScoreForUser;
 DELIMITER $$
 
-CREATE PROCEDURE ComputeAverageScoreForUser (IN user_id FLOAT)
+CREATE PROCEDURE ComputeAverageScoreForUser (IN user_id INT)
 BEGIN
     DECLARE average FLOAT;
     SELECT AVG(score) INTO average
